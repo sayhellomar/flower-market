@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #E95A08;
+    --secondary-color: #000;
+    --third-color: #111;
+    --text-color: rgba(0, 0, 0, 50%);
+    --gray-500: #6B7280;
+    --body-bg: #F5F8FF;
+    --nav-color: #8987A1;
+    --nav-current-color: #252432;
+    --white-color: #FFF;
+
+    --primary-font-family: "Inter", sans-serif;
+    --secondary-font-family: "Noto Serif", serif;
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+body,
+p,
+input,
+h6 {
+    font-family: var(--primary-font-family);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--secondary-font-family);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header nav ul li a {
+    color: var(--nav-color);
+    font-weight: 400;
+    font-family: var(--primary-font-family);
+    transition: color .5s ease;
+}
+
+header nav ul li a.current {
+    font-weight: 600;
+}
+
+header nav ul li a.focus,
+header nav ul li a:hover {
+    color: var(--nav-current-color);
+}
