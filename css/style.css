@@ -21,7 +21,8 @@ body {
 
 body,
 p,
-input {
+input,
+input::placeholder {
     font-family: var(--primary-font-family);
     font-optical-sizing: auto;
     font-weight: 400;
@@ -93,6 +94,25 @@ header nav ul li a:hover {
 
 .trusted-badge {
     animation: animation-spin 15s linear 0s infinite;
+}
+
+.newsletter-area {
+    background-image: url("../images/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.newsletter-area::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(7, 51, 79, 0.4);
 }
 
 @keyframes animation-spin {
