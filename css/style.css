@@ -21,8 +21,7 @@ body {
 
 body,
 p,
-input,
-h6 {
+input {
     font-family: var(--primary-font-family);
     font-optical-sizing: auto;
     font-weight: 400;
@@ -40,6 +39,10 @@ h5 {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+}
+
+h6 {
+    font-family: var(--primary-font-family);
 }
 
 .primary-color {
@@ -68,4 +71,41 @@ header nav ul li a.current {
 header nav ul li a.focus,
 header nav ul li a:hover {
     color: var(--nav-current-color);
+}
+
+.latest-deal-container {
+    grid-template-areas: 
+    'one three'
+    'two three';
+}
+
+.latest-deal-item:nth-child(1) {
+    grid-area: one;
+}
+
+.latest-deal-item:nth-child(2) {
+    grid-area: two;
+}
+
+.latest-deal-item:nth-child(3) {
+    grid-area: three;
+}
+
+.trusted-badge {
+    animation: animation-spin 15s linear 0s infinite;
+}
+
+@keyframes animation-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    .latest-deal-container {
+        grid-template-areas: 
+        'one'
+        'two'
+        'three';
+    }
 }
