@@ -42,6 +42,14 @@ h5 {
     "wdth" 100;
 }
 
+.primary-color {
+    color: var(--primary-color);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
 header nav ul li a {
     color: var(--nav-color);
     font-weight: 400;
