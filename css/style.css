@@ -21,8 +21,8 @@ body {
 
 body,
 p,
-input,
-input::placeholder {
+input[type="email"],
+input[type="email"]::placeholder {
     font-family: var(--primary-font-family);
     font-optical-sizing: auto;
     font-weight: 400;
